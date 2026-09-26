@@ -35,7 +35,7 @@
 <nav class="bottom"><button class="tab active" data-screen="calendar"><span class="tab-icon">▣</span><span class="tab-label">Calendar</span></button><button class="tab" data-screen="balance"><span class="tab-icon">▥</span><span class="tab-label">Balance</span></button></nav>
 <div id="overlay" class="overlay"><div class="sheet"><div class="handle"></div><div class="sheet-head"><div><h2 id="sheetTitle" class="sheet-title"></h2><div class="sheet-sub">Select a category</div></div><button id="close" class="close" aria-label="Close">×</button></div><div id="options"></div></div></div>
 <script>
-const CATS={social:{name:'Social',icon:'♙'},solo:{name:'Solo Fun',icon:'♡'},practical:{name:'Practical',icon:'⌂'},hobbies:{name:'Hobbies',icon:'✂'},rest:{name:'Rest',icon:'☾'},unassigned:{name:'Unassigned',icon:'○'}};
+const CATS={social:{name:'Social',icon:'♙'},solo:{name:'Solo Fun',icon:'♡'},practical:{name:'Practical',icon:'⌂'},hobbies:{name:'Hobbies',icon:'\u2702\uFE0E'},rest:{name:'Rest',icon:'☾'},unassigned:{name:'Unassigned',icon:'○'}};
 const ORDER=['social','solo','practical','hobbies','rest','unassigned'];
 const START=new Date(2026,0,1), END=new Date(2029,11,31);
 const pad=n=>String(n).padStart(2,'0'); const key=d=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
